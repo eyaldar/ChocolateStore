@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace ChocolateStore
 {
-    public class RepositoryPackageListBuilder
+    public class RepositoryPackagesListBuilder
     {
         private const string packageUrlFormat = "{0}/{1}/{2}";
         private readonly string source;
         private readonly string packagesPath;
         private readonly FeedContext_x0060_1 feedService;
 
-        public RepositoryPackageListBuilder(string source)
+        public RepositoryPackagesListBuilder(string source)
             : this(source, string.Empty)
         {
         }
 
-        public RepositoryPackageListBuilder(string source, string packagesPath)
+        public RepositoryPackagesListBuilder(string source, string packagesPath)
         {
             this.source = source;
             this.packagesPath = packagesPath;
